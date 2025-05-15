@@ -27,7 +27,7 @@ const Inicial = () => {
                     <Card.Img
                         variant="top"
                         src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-                        alt="Campos Life"
+                        alt="Campus Life"
                         style={{height:'200px', objectFit: 'cover'}}
                     />
                     <Card.Body>
@@ -77,6 +77,32 @@ const Inicial = () => {
                         O centro de nossa instituição, com salas de aula modernas e laboratórios equipados para atender às necessidades dos cursos.
                         </Card.Text>                   
                      </Card.Body>
+                </Card>
+            </Col>
+        </Row>
+        {/* (Segunda linha com duas clonuas para  os cards ficarem lado a lado ) */}
+
+        <Row className="g-4 mt-4">
+            {/* Card 1*/}
+            <Col md={6}>
+                <Card className="h-100 shadow-sm">
+                    <Card.Body className="text-center">
+                        <Card.Title >Parcerias com empresas</Card.Title>
+                        <Card.Text >
+                            ...
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+            {/* Card 2 */}
+            <Col md={6}>
+                <Card className="h-100 shadow-sm">
+                    <Card.Body className="text-center">
+                        <Card.Title >Compromisso com a Educação</Card.Title>
+                        <Card.Text >
+                            ...
+                        </Card.Text>
+                    </Card.Body>
                 </Card>
             </Col>
         </Row>
