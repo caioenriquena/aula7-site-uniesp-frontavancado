@@ -1,12 +1,11 @@
 import React from 'react'
 import{Container,Card, Row, Col} from 'react-bootstrap'
-import BannerAd from '../components/BannerAd'
-
-const Inicial = () => {
+const Faculdade = () => {
   return (
-    <Container className="py-4">
+     <Container className="py-4">
+        <h2 className="mb-4">A faculdade</h2>
         {/*Aqui será o carousel do banner */}
-        <BannerAd/>
+        
         <Card className="mb-4 shadow-sm">
             <Card.Body>
             <p>
@@ -81,36 +80,9 @@ const Inicial = () => {
                 </Card>
             </Col>
         </Row>
-        {/* (Segunda linha com duas clonuas para  os cards ficarem lado a lado ) */}
-
-        <Row className="g-4 mt-4">
-            {/* Card 1*/}
-            <Col md={6}>
-                <Card className="h-100 shadow-sm">
-                    <Card.Body className="text-center">
-                        <Card.Title >Parcerias com empresas</Card.Title>
-                        <Card.Text >
-                             A UNIESP mantém parcerias com diversas empresas, permitindo que nossos alunos tenham acesso a oportunidades de estágio e emprego logo após a graduação...
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </Col>
-            {/* Card 2 */}
-            <Col md={6}>
-                <Card className="h-100 shadow-sm">
-                    <Card.Body className="text-center">
-                        <Card.Title >Compromisso com a Educação</Card.Title>
-                        <Card.Text >
-                            A UNIESP se dedica a oferecer uma educação acessível e de qualidade, acreditando que o conhecimento transforma vidas...
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </Col>
-        </Row>
-
+        
     </Container>
-   
   )
 }
 
-export default Inicial
+export default Faculdade
